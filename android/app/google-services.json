@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "265149690482",
+    "project_id": "app-filmes-8ecb8",
+    "storage_bucket": "app-filmes-8ecb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265149690482:android:810fc667dc0c9d07a608eb",
+        "android_client_info": {
+          "package_name": "br.com.felipecastrosales.app_filmes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265149690482-0amjshiqvquqb1kbn2brcsruejfh29v1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.felipecastrosales.app_filmes",
+            "certificate_hash": "75d8a67272b0c9f4976a140d3d715a6fa10e3a8e"
+          }
+        },
+        {
+          "client_id": "265149690482-ddoh5vkv75em34diqqllpuofbui5i2up.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxFcc2YhFFHLsZp3SBhCGpy2SnjfzA0i4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265149690482-ddoh5vkv75em34diqqllpuofbui5i2up.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
