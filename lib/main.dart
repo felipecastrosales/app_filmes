@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:get/get.dart';
 
 import 'modules/splash/splash_module.dart';
@@ -8,8 +9,10 @@ import 'modules/splash/splash_module.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  RemoteConfig.instance.fetchAndActivate();
   runApp(
-    const MyApp(),
+    // ignore: prefer_const_constructors 
+    MyApp(), // it's not 'const' because void main is async 
   );
 }
 

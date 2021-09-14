@@ -1,6 +1,9 @@
-import 'package:get/get.dart';
 import 'package:flutter/material.dart';
-import './splash_controller.dart';
+
+import 'package:firebase_remote_config/firebase_remote_config.dart';
+import 'package:get/get.dart';
+
+import 'splash_controller.dart';
 
 class SplashPage extends GetView<SplashController> {
   const SplashPage({Key? key}) : super(key: key);
@@ -11,7 +14,13 @@ class SplashPage extends GetView<SplashController> {
       appBar: AppBar(
         title: const Text('SplashPage'),
       ),
-      body: Container(),
+      body: Center(
+        child: Container(
+          child: Text(
+            RemoteConfig.instance.getString('api_token'),
+          ),
+        ),
+      ),
     );
   }
 }
