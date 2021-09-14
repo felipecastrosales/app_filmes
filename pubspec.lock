@@ -74,6 +74,15 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  get:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: "8a8c64240f4a7b49c9fc66b55771695e2c0ccc37"
+      url: "git@github.com:jonataslaw/getx.git"
+    source: git
+    version: "4.3.8"
   lints:
     dependency: transitive
     description:
