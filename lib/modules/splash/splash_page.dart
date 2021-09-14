@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:get/get.dart';
 
 import 'splash_controller.dart';
@@ -16,9 +15,15 @@ class SplashPage extends GetView<SplashController> {
       ),
       body: Center(
         child: Container(
-          child: Text(
-            RemoteConfig.instance.getString('api_token'),
+          width: Get.width,
+          height: Get.height,
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/images/background.png'),
+              fit: BoxFit.cover,
+            ),
           ),
+          child: Image.asset('assets/images/logo.png'),
         ),
       ),
     );
