@@ -8,9 +8,10 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.2
+  firebase_core: ^1.6.0
   flutter:
     sdk: flutter
-  get: #4.3.8
+  get:
     git: git@github.com:jonataslaw/getx.git
 
 dev_dependencies:
