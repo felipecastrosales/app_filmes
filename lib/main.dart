@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:get/get.dart';
 
+import 'modules/login/login_module.dart';
 import 'modules/splash/splash_module.dart';
 
 Future<void> main() async {
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
       ),
       getPages: [
         ...SplashModule().routers,
+        ...LoginModule().routers,
       ],
     );
   }
