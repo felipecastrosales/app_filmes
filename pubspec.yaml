@@ -16,6 +16,7 @@ dependencies:
   flutter_signin_button: ^2.0.0
   get:
     git: git@github.com:jonataslaw/getx.git
+  google_sign_in: ^5.1.0
 
 dev_dependencies:
   flutter_lints: ^1.0.0
