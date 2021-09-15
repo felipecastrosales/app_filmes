@@ -13,8 +13,10 @@ dependencies:
   firebase_remote_config: ^0.10.0+5
   flutter:
     sdk: flutter
+  flutter_signin_button: ^2.0.0
   get:
     git: git@github.com:jonataslaw/getx.git
+  google_sign_in: ^5.1.0
 
 dev_dependencies:
   flutter_lints: ^1.0.0
@@ -23,5 +25,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  assets: 
+  assets:
     - assets/images/
