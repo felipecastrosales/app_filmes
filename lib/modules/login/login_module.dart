@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 
 import 'package:app_filmes/application/modules/module.dart';
+import 'login_bindings.dart';
 import 'login_page.dart';
 
 class LoginModule implements Module {
@@ -9,6 +10,7 @@ class LoginModule implements Module {
     GetPage(
       name: '/login',
       page: () => const LoginPage(),
+      binding: LoginBindings(),
     )
   ];
 }
