@@ -5,6 +5,7 @@ import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:get/get.dart';
 
 import 'application/bindings/application_bindings.dart';
+import 'modules/home/home_module.dart';
 import 'modules/login/login_module.dart';
 import 'modules/splash/splash_module.dart';
 
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
       getPages: [
         ...SplashModule().routers,
         ...LoginModule().routers,
+        ...HomeModule().routers,
       ],
     );
   }
