@@ -35,9 +35,11 @@ class LoginController extends GetxController with LoaderMixin, MessagesMixin {
       print(e);
       print(s);
       loading(false);
-      MessageModel.error(
-        title: 'Error',
-        message: 'Login with Error',
+      message(
+        MessageModel.error(
+          title: 'Error',
+          message: 'Login with Error',
+        ),
       );
     }
   }
