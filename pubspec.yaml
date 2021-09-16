@@ -27,3 +27,13 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+  fonts: 
+    - family: FilmesAppIcons
+      fonts:
+        - asset: assets/fonts/FilmesAppIcons.ttf
+    - family: Metropolis
+      fonts:
+        - asset: assets/fonts/metropolis/Metropolis-Regular.otf
+        - asset: assets/fonts/metropolis/Metropolis-Semibold.otf
+          weight: 600
+        - asset: assets/fonts/metropolis/Metropolis-Bold.otf
