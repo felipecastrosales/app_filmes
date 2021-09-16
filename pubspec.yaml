@@ -33,7 +33,7 @@ flutter:
         - asset: assets/fonts/FilmesAppIcons.ttf
     - family: Metropolis
       fonts:
-        - asset: assets/fonts/Metropolis-Regular.otf/
-        - asset: assets/fonts/Metropolis-Semibold.otf/
+        - asset: assets/fonts/metropolis/Metropolis-Regular.otf
+        - asset: assets/fonts/metropolis/Metropolis-Semibold.otf
           weight: 600
-        - asset: assets/fonts/Metropolis-Bold.otf/
+        - asset: assets/fonts/metropolis/Metropolis-Bold.otf

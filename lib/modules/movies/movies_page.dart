@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
     
-class MoviesPageDart extends StatelessWidget {
+class MoviesPage extends StatelessWidget {
 
-  const MoviesPageDart({ Key? key }) : super(key: key);
+  const MoviesPage({ Key? key }) : super(key: key);
   
   @override
   Widget build(BuildContext context) {
