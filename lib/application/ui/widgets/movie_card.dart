@@ -24,7 +24,7 @@ class MovieCard extends StatelessWidget {
                     clipBehavior: Clip.antiAlias,
                     borderRadius: BorderRadius.circular(20),
                     child: Image.network(
-                      'https://br.web.img3.acsta.net/pictures/15/09/29/12/57/543717.jpg',
+                      'https://m.media-amazon.com/images/M/MV5BNzMyMTM1MjQxNF5BMl5BanBnXkFtZTgwMjY4NTE5NjE@._V1_.jpg',
                       width: 148,
                       height: 184,
                       fit: BoxFit.cover,
