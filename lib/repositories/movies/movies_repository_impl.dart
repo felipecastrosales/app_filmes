@@ -14,22 +14,26 @@ class MoviesRepositoryImpl implements MoviesRepository {
   Future<List<MovieModel>> getPopularMovies() async {
     final result = await _restClient.get<List<MovieModel>>(
       '/movie/popular',
-      query: {
+      query: <String, String>{
         'api_key': RemoteConfig.instance.getString('api_token'),
         'language': 'pt-br',
         'page': '1',
       },
       decoder: (data) {
         final results = data['results'];
-        print('Results from API: $results');
-        if (results == null) {
-          return results.map((v) => MovieModel.fromMap(v)).toList();
+        if (results != null) {
+          return results
+              .map<MovieModel>(
+                (date) => MovieModel.fromMap(date),
+              )
+              .toList();
         }
         return <MovieModel>[];
       },
     );
+
     if (result.hasError) {
-      print('Erro ao buscar popular movies ${result.statusText}');
+      print('Erro ao buscar popular movies [${result.statusText}]');
       throw Exception('Erro ao buscar filmes populares');
     }
     return result.body ?? <MovieModel>[];
@@ -39,15 +43,19 @@ class MoviesRepositoryImpl implements MoviesRepository {
   Future<List<MovieModel>> getTopRatedMovies() async {
     final result = await _restClient.get<List<MovieModel>>(
       '/movie/top_rated',
-      query: {
+      query: <String, String>{
         'api_key': RemoteConfig.instance.getString('api_token'),
         'language': 'pt-br',
         'page': '1',
       },
       decoder: (data) {
         final results = data['results'];
-        if (results == null) {
-          return results.map((v) => MovieModel.fromMap(v)).toList();
+        if (results != null) {
+          return results
+              .map<MovieModel>(
+                (date) => MovieModel.fromMap(date),
+              )
+              .toList();
         }
         return <MovieModel>[];
       },
