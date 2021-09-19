@@ -17,6 +17,7 @@ dependencies:
   get:
     git: git@github.com:jonataslaw/getx.git
   google_sign_in: ^5.1.0
+  intl: ^0.17.0
 
 dev_dependencies:
   flutter_lints: ^1.0.0
@@ -27,7 +28,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
-  fonts: 
+  fonts:
     - family: FilmesAppIcons
       fonts:
         - asset: assets/fonts/FilmesAppIcons.ttf

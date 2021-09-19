@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 class AuthService extends GetxService {
   User? user;
 
-  void init() {
+  Future<void> init() async {
     FirebaseAuth.instance.authStateChanges().listen(
       (User? user) {
         this.user = user;
