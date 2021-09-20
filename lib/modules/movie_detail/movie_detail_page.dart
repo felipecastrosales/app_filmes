@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'movie_detail_controller.dart';
+import 'movie_detail_content/movie_detail_content.dart';
 import 'widgets/movie_detail_header.dart';
 
 class MovieDetailPage extends GetView<MovieDetailController> {
@@ -17,8 +18,12 @@ class MovieDetailPage extends GetView<MovieDetailController> {
       body: SingleChildScrollView(
         child: Obx(() {
           return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               MovieDetailHeader(
+                movie: controller.movie.value,
+              ),
+              MovieDetailContent(
                 movie: controller.movie.value,
               ),
             ],
