@@ -8,6 +8,7 @@ import 'application/bindings/application_bindings.dart';
 import 'application/ui/filmes_app_ui_config.dart';
 import 'modules/home/home_module.dart';
 import 'modules/login/login_module.dart';
+import 'modules/movie_detail/movie_detail_module.dart';
 import 'modules/splash/splash_module.dart';
 
 Future<void> main() async {
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         ...SplashModule().routers,
         ...LoginModule().routers,
         ...HomeModule().routers,
+        ...MovieDetailModule().routers,
       ],
     );
   }
