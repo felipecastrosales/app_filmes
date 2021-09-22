@@ -7,12 +7,14 @@ environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
+  cloud_firestore: ^2.5.2
   cupertino_icons: ^1.0.2
   firebase_auth: ^3.1.1
   firebase_core: ^1.6.0
   firebase_remote_config: ^0.10.0+5
   flutter:
     sdk: flutter
+  flutter_rating_stars: ^1.0.3+4
   flutter_signin_button: ^2.0.0
   get:
     git: git@github.com:jonataslaw/getx.git

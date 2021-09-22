@@ -16,6 +16,7 @@ class ApplicationBindings implements Bindings {
   void dependencies() {
     Get.lazyPut(
       () => RestClient(),
+      fenix: true,
     );
     Get.lazyPut<LoginRepository>(
       () => LoginRepositoryImpl(),
@@ -26,7 +27,7 @@ class ApplicationBindings implements Bindings {
         loginRepository: Get.find(),
       ),
       fenix: true,
-    );
+    ); 
     Get.put(
       AuthService(),
     ).init();
@@ -34,11 +35,13 @@ class ApplicationBindings implements Bindings {
       () => MoviesRepositoryImpl(
         restClient: Get.find(),
       ),
+      fenix: true,
     );
     Get.lazyPut<MoviesService>(
       () => MoviesServiceImpl(
         moviesRepository: Get.find(),
       ),
+      fenix: true,
     );
   }
 }
