@@ -44,7 +44,6 @@
 
 <h2>📦 Assets</h2>
 
-
 - UI Design criado para o evento: <a href="https://www.figma.com/file/uxIIdBQowPYx5KS9nGHS4A/Filmes">**App Filmes 📱**</a>
 - Pasta <a href="https://drive.google.com/file/d/1Bv1YnYTVx08qFnRuH2Fgtyi1e7mIkJ5t/view?usp=sharing">**`/assets`**</a>
 - JSON da <a href="https://drive.google.com/file/d/1UH-FWWrK0jV3TSYOGjh3a7g-IZRjzNpU/view?usp=sharing">**`Postman Collection`**</a>
@@ -134,7 +133,7 @@
    Esse repositório está sobre a Licença MIT, e você pode vê-la no arquivo <a href="https://github.com/felipecastrosales/app_filmes/blob/master/LICENSE">LICENSE</a> para mais detalhes. 😉
 </p>
 
-   ---
+---
 
    >Esse projeto foi desenvolvido com ❤️ por **[@Felipe Sales](https://www.linkedin.com/in/felipecastrosales/)**, com o instrutor **[@Rodrigo Rahman](https://br.linkedin.com/in/rodrigo-rahman)**, no evento #DartWeek da **[Academia do Flutter](https://hotmart.com/product/academia-do-flutter/O24924684W)**.<br>
    Se isso te ajudou, dê uma ⭐, e contribua, isso irá me ajudar também 😉
