@@ -10,14 +10,14 @@
 
    <p>
 
-   - [📖 Sobre](#sobre-)
-   - [📱 Preview](#preview-)
-   - [📦 Assets](#assets-)
-   - [🛠️ Funcionalidades e Tecnologias Estudadas](#funcionalidades-e-tecnologias-estudadas-%EF%B8%8F)
-   - [🤯 Desafios e Aprendizados ao longo do caminho](#desafios-e-aprendizados-ao-longo-do-caminho-)
-   - [🤔 Como usar](#como-usar-)
-   - [💪 Como contribuir](#como-contribuir-)
-   - [📝 License](#licença-)
+   - [📖 Sobre](#-sobre)
+   - [📱 Preview](#-preview)
+   - [📦 Assets](#-assets)
+   - [🛠️ Funcionalidades e Tecnologias Estudadas](#%EF%B8%8F-funcionalidades-e-tecnologias-estudadas)
+   - [🤯 Desafios e Aprendizados ao longo do caminho](#-desafios-e-aprendizados-ao-longo-do-caminho)
+   - [🤔 Como usar](#-como-usar)
+   - [💪 Como contribuir](#-como-contribuir)
+   - [📝 Licença](#-licença)
 
    </p>
 
@@ -45,9 +45,9 @@
 <h2>📦 Assets</h2>
 
 
-- UI Design criado para o evento: <a href="https://www.figma.com/file/uxIIdBQowPYx5KS9nGHS4A/Filmes">**App Filmes 📱**</a>.
-- Pasta <a href="https://drive.google.com/file/d/1Bv1YnYTVx08qFnRuH2Fgtyi1e7mIkJ5t/view?usp=sharing">**`/assets`**</a>.
-- JSON da <a href="https://drive.google.com/file/d/1UH-FWWrK0jV3TSYOGjh3a7g-IZRjzNpU/view?usp=sharing">**`Postman Collection`**</a>.
+- UI Design criado para o evento: <a href="https://www.figma.com/file/uxIIdBQowPYx5KS9nGHS4A/Filmes">**App Filmes 📱**</a>
+- Pasta <a href="https://drive.google.com/file/d/1Bv1YnYTVx08qFnRuH2Fgtyi1e7mIkJ5t/view?usp=sharing">**`/assets`**</a>
+- JSON da <a href="https://drive.google.com/file/d/1UH-FWWrK0jV3TSYOGjh3a7g-IZRjzNpU/view?usp=sharing">**`Postman Collection`**</a>
 > * Caso queira consultar **todos os assets do projeto**, clique <a href="https://drive.google.com/file/d/1UH-FWWrK0jV3TSYOGjh3a7g-IZRjzNpU/view?usp=sharing">nesse link</a>. 
 
 ---   
@@ -136,8 +136,8 @@
 
    ---
 
-   >Esse projeto foi desenvolvido com ❤️ por **[@Felipe Sales](https://www.linkedin.com/in/felipecastrosales/)**, com o instrutor **[@GabulDev](https://br.linkedin.com/in/rodrigo-rahman)**, no evento #DartWeek da **[Academia do Flutter](https://hotmart.com/product/academia-do-flutter/O24924684W)**.<br>
-   Se isso te ajudou, dê uma ⭐, e contribua, que isso irá me ajudar também 😉
+   >Esse projeto foi desenvolvido com ❤️ por **[@Felipe Sales](https://www.linkedin.com/in/felipecastrosales/)**, com o instrutor **[@Rodrigo Rahman](https://br.linkedin.com/in/rodrigo-rahman)**, no evento #DartWeek da **[Academia do Flutter](https://hotmart.com/product/academia-do-flutter/O24924684W)**.<br>
+   Se isso te ajudou, dê uma ⭐, e contribua, isso irá me ajudar também 😉
 
 ---
 
