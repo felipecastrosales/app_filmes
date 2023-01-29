@@ -5,7 +5,7 @@ import 'splash_bindings.dart';
 import 'splash_page.dart';
 
 class SplashModule implements Module {
-  @override 
+  @override
   List<GetPage> routers = [
     GetPage(
       name: '/',

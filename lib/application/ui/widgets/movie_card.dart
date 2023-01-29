@@ -9,10 +9,10 @@ import 'package:app_filmes/models/movie_model.dart';
 
 class MovieCard extends StatelessWidget {
   MovieCard({
-    Key? key,
+    super.key,
     required this.movie,
     required this.favoriteCallback,
-  }) : super(key: key);
+  });
 
   final MovieModel movie;
   final dateFormat = DateFormat('dd/MM/y');

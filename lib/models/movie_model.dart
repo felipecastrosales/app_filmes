@@ -1,6 +1,20 @@
 import 'dart:convert';
 
 class MovieModel {
+  factory MovieModel.fromMap(Map<String, dynamic> map) {
+    return MovieModel(
+      id: map['id'] ?? 0,
+      title: map['title'] ?? '',
+      releaseDate: map['release_date'] ?? '',
+      posterPath: map['poster_path'],
+      genres: List<int>.from(map['genre_ids'] ?? const []),
+      favorite: map['favorite'] ?? false,
+    );
+  }
+
+  factory MovieModel.fromJson(String source) =>
+      MovieModel.fromMap(json.decode(source));
+
   MovieModel({
     required this.id,
     required this.title,
@@ -28,20 +42,7 @@ class MovieModel {
     };
   }
 
-  factory MovieModel.fromMap(Map<String, dynamic> map) {
-    return MovieModel(
-      id: map['id'] ?? 0,
-      title: map['title'] ?? '',
-      releaseDate: map['release_date'] ?? '',
-      posterPath: map['poster_path'],
-      genres: List<int>.from(map['genre_ids'] ?? const []),
-      favorite: map['favorite'] ?? false,
-    );
-  }
-
   String toJson() => json.encode(toMap());
-
-  factory MovieModel.fromJson(String source) => MovieModel.fromMap(json.decode(source));
 
   MovieModel copyWith({
     int? id,

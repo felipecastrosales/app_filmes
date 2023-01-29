@@ -4,9 +4,10 @@ import 'package:app_filmes/models/movie_detail_model.dart';
 
 class MovieDetailContentProductionCompanies extends StatelessWidget {
   const MovieDetailContentProductionCompanies({
-    Key? key,
+    super.key,
     required this.movie,
-  }) : super(key: key);
+  });
+
   final MovieDetailModel? movie;
 
   @override

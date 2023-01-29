@@ -7,7 +7,7 @@ import 'widgets/movie_detail_content/movie_detail_content.dart';
 import 'widgets/movie_detail_header.dart';
 
 class MovieDetailPage extends GetView<MovieDetailController> {
-  const MovieDetailPage({Key? key}) : super(key: key);
+  const MovieDetailPage({super.key});
 
   @override
   Widget build(BuildContext context) {

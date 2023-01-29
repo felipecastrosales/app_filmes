@@ -6,7 +6,7 @@ import 'package:app_filmes/application/ui/widgets/movie_card.dart';
 import 'favorites_controller.dart';
 
 class FavoritesPage extends GetView<FavoritesController> {
-  const FavoritesPage({Key? key}) : super(key: key);
+  const FavoritesPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,10 +23,10 @@ class FavoritesPage extends GetView<FavoritesController> {
               alignment: WrapAlignment.spaceAround,
               children: controller.movies
                   .map(
-                    (m) => MovieCard(
-                      movie: m,
+                    (movie) => MovieCard(
+                      movie: movie,
                       favoriteCallback: () =>
-                          controller.removeFavorite(movie: m),
+                          controller.removeFavorite(movie: movie),
                     ),
                   )
                   .toList(),

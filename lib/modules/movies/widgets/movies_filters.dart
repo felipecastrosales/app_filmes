@@ -6,7 +6,7 @@ import 'package:app_filmes/modules/movies/movies_controller.dart';
 import 'filter_tag.dart';
 
 class MoviesFilters extends GetView<MoviesController> {
-  const MoviesFilters({Key? key}) : super(key: key);
+  const MoviesFilters({super.key});
 
   @override
   Widget build(BuildContext context) {

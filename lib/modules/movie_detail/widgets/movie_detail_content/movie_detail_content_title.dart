@@ -7,10 +7,12 @@ import 'package:app_filmes/application/ui/theme_extension.dart';
 
 class MovieDetailContentTitle extends StatelessWidget {
   const MovieDetailContentTitle({
-    Key? key,
+    super.key,
     required this.movie,
-  }) : super(key: key);
+  });
+
   final MovieDetailModel? movie;
+
   @override
   Widget build(BuildContext context) {
     return Padding(

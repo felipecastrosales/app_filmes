@@ -8,9 +8,9 @@ import 'movie_cast.dart';
 
 class MovieDetailContentMainCast extends StatelessWidget {
   MovieDetailContentMainCast({
-    Key? key,
+    super.key,
     required this.movie,
-  }) : super(key: key);
+  });
 
   final MovieDetailModel? movie;
   final showPanel = false.obs;
@@ -47,11 +47,7 @@ class MovieDetailContentMainCast extends StatelessWidget {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: movie?.cast
-                            .map(
-                              (cast) => MovieCast(
-                                cast: cast,
-                              ),
-                            )
+                            .map((cast) => MovieCast(cast: cast))
                             .toList() ??
                         const [],
                   ),
@@ -60,7 +56,7 @@ class MovieDetailContentMainCast extends StatelessWidget {
             ],
           );
         }),
-      const SizedBox(height: 16),
+        const SizedBox(height: 16),
       ],
     );
   }

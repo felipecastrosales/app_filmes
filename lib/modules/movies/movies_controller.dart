@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'package:app_filmes/application/auth/auth_service.dart';
@@ -8,6 +9,14 @@ import 'package:app_filmes/services/genres/genres_service.dart';
 import 'package:app_filmes/services/movies/movies_service.dart';
 
 class MoviesController extends GetxController with MessagesMixin {
+  MoviesController({
+    required GenresService genresService,
+    required MoviesService moviesService,
+    required AuthService authService,
+  })  : _genresService = genresService,
+        _moviesService = moviesService,
+        _authService = authService;
+
   final GenresService _genresService;
   final MoviesService _moviesService;
   final AuthService _authService;
@@ -21,14 +30,6 @@ class MoviesController extends GetxController with MessagesMixin {
   var _popularMoviesOriginal = <MovieModel>[];
   var _topRatedMoviesOriginal = <MovieModel>[];
   final genreSelected = Rxn<GenreModel>();
-
-  MoviesController({
-    required GenresService genresService,
-    required MoviesService moviesService,
-    required AuthService authService,
-  })  : _genresService = genresService,
-        _moviesService = moviesService,
-        _authService = authService;
 
   @override
   void onInit() {
@@ -44,8 +45,8 @@ class MoviesController extends GetxController with MessagesMixin {
       genres.assignAll(genresData);
       await getMovies();
     } catch (e, s) {
-      print(e);
-      print(s);
+      debugPrint(e.toString());
+      debugPrint(s.toString());
       _message(
         MessageModel.error(
           title: 'Erro',
@@ -61,11 +62,11 @@ class MoviesController extends GetxController with MessagesMixin {
       var topRatedMoviesData = await _moviesService.getTopRatedMovies();
       final favorites = await getFavorites();
 
-      popularMoviesData = popularMoviesData.map((m) {
-        if (favorites.containsKey(m.id)) {
-          return m.copyWith(favorite: true);
+      popularMoviesData = popularMoviesData.map((movie) {
+        if (favorites.containsKey(movie.id)) {
+          return movie.copyWith(favorite: true);
         } else {
-          return m.copyWith(favorite: false);
+          return movie.copyWith(favorite: false);
         }
       }).toList();
 
@@ -82,8 +83,8 @@ class MoviesController extends GetxController with MessagesMixin {
       topRatedMovies.assignAll(topRatedMoviesData);
       _topRatedMoviesOriginal = topRatedMoviesData;
     } catch (e, s) {
-      print(e);
-      print(s);
+      debugPrint(e.toString());
+      debugPrint(s.toString());
       _message(
         MessageModel.error(
           title: 'Erro',
@@ -97,16 +98,12 @@ class MoviesController extends GetxController with MessagesMixin {
     if (title.isNotEmpty) {
       var newPopularMovies = _popularMoviesOriginal.where(
         (movie) {
-          return movie.title.toLowerCase().contains(
-                title.toLowerCase(),
-              );
+          return movie.title.toLowerCase().contains(title.toLowerCase());
         },
       );
       var newTopRatedMovies = _topRatedMoviesOriginal.where(
         (movie) {
-          return movie.title.toLowerCase().contains(
-                title.toLowerCase(),
-              );
+          return movie.title.toLowerCase().contains(title.toLowerCase());
         },
       );
       popularMovies.assignAll(newPopularMovies);
@@ -157,7 +154,7 @@ class MoviesController extends GetxController with MessagesMixin {
     if (user != null) {
       final favorities = await _moviesService.getFavoritiesMovies(user.uid);
       return <int, MovieModel>{
-        for (var fav in favorities) fav.id: fav,
+        for (var favorite in favorities) favorite.id: favorite,
       };
     }
     return {};

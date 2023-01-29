@@ -7,9 +7,9 @@ import 'package:app_filmes/models/movie_detail_model.dart';
 
 class MovieDetailHeader extends GetView<MovieDetailController> {
   const MovieDetailHeader({
-    Key? key,
+    super.key,
     required this.movie,
-  }) : super(key: key);
+  });
 
   final MovieDetailModel? movie;
 

@@ -3,15 +3,14 @@ import 'package:get/get.dart';
 import 'package:app_filmes/services/login/login_service.dart';
 
 class HomeController extends GetxController {
-  // ignore: constant_identifier_names
-  static const NAVIGATOR_KEY = 1;
-  // ignore: constant_identifier_names
-  static const INDEX_PAGE_EXIT = 2;
-
-  final LoginService _loginService;
   HomeController({
     required LoginService loginService,
   }) : _loginService = loginService;
+
+  static const navigatorKey = 1;
+  static const indexPageExit = 2;
+
+  final LoginService _loginService;
 
   final _pages = [
     '/movies',
@@ -24,12 +23,12 @@ class HomeController extends GetxController {
 
   void goToPage(int page) {
     _pageIndex(page);
-    if (page == INDEX_PAGE_EXIT) {
+    if (page == indexPageExit) {
       _loginService.logout();
     } else {
       Get.offNamed(
         _pages[page],
-        id: NAVIGATOR_KEY,
+        id: navigatorKey,
       );
     }
   }
