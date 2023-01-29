@@ -8,9 +8,10 @@ import 'movie_detail_content_title.dart';
 
 class MovieDetailContent extends StatelessWidget {
   const MovieDetailContent({
-    Key? key,
+    super.key,
     required this.movie,
-  }) : super(key: key);
+  });
+
   final MovieDetailModel? movie;
 
   @override

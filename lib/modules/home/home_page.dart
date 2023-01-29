@@ -11,7 +11,7 @@ import 'package:app_filmes/modules/movies/movies_page.dart';
 import 'home_controller.dart';
 
 class HomePage extends GetView<HomeController> {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class HomePage extends GetView<HomeController> {
       }),
       body: Navigator(
         initialRoute: '/movies',
-        key: Get.nestedKey(HomeController.NAVIGATOR_KEY),
+        key: Get.nestedKey(HomeController.navigatorKey),
         onGenerateRoute: (settings) {
           if (settings.name == '/movies') {
             return GetPageRoute(

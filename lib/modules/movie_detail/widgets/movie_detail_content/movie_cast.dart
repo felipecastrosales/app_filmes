@@ -5,9 +5,9 @@ import 'package:app_filmes/models/cast_model.dart';
 
 class MovieCast extends StatelessWidget {
   const MovieCast({
-    Key? key,
+    super.key,
     required this.cast,
-  }) : super(key: key);
+  });
   final CastModel? cast;
 
   @override

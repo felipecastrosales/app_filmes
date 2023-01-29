@@ -1,5 +1,3 @@
 import 'package:get/get.dart';
 
-class SplashController extends GetxController {
-  
-}
+class SplashController extends GetxController {}

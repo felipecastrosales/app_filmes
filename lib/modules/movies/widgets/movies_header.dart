@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:app_filmes/modules/movies/movies_controller.dart';
 
 class MoviesHeader extends GetView<MoviesController> {
-  const MoviesHeader({Key? key}) : super(key: key);
+  const MoviesHeader({super.key});
 
   @override
   Widget build(BuildContext context) {

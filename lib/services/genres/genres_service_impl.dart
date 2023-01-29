@@ -3,11 +3,11 @@ import 'package:app_filmes/repositories/genres/genres_repository.dart';
 import 'genres_service.dart';
 
 class GenresServiceImpl implements GenresService {
-  final GenresRepository _genreRepository;
-
   GenresServiceImpl({
     required GenresRepository genreRepository,
   }) : _genreRepository = genreRepository;
+
+  final GenresRepository _genreRepository;
 
   @override
   Future<List<GenreModel>> getGenres() => _genreRepository.getGenres();

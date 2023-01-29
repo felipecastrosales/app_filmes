@@ -8,10 +8,10 @@ import 'package:app_filmes/modules/movies/movies_controller.dart';
 
 class MoviesGroup extends GetView<MoviesController> {
   const MoviesGroup({
-    Key? key,
+    super.key,
     required this.title,
     required this.movies,
-  }) : super(key: key);
+  });
 
   final String title;
   final List<MovieModel> movies;

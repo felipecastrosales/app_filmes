@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'package:app_filmes/application/ui/loader/loader_mixin.dart';
@@ -33,8 +34,8 @@ class MovieDetailController extends GetxController
       movie.value = movieDetailData;
       loading(false);
     } catch (e, s) {
-      print(e);
-      print(s);
+      debugPrint(e.toString());
+      debugPrint(s.toString());
       loading(false);
       MessageModel.error(
         title: 'Erro',
