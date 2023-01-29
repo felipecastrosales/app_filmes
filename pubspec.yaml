@@ -1,28 +1,28 @@
 name: app_filmes
-description: A new Flutter project.
+description: App Filmes.
 publish_to: 'none'
+# TODO: Bump to 2.0.0
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.19.0 <3.0.0"
 
 dependencies:
-  cloud_firestore: ^2.5.2
-  cupertino_icons: ^1.0.2
-  firebase_auth: ^3.1.1
-  firebase_core: ^1.6.0
-  firebase_remote_config: ^0.10.0+5
+  cloud_firestore: ^4.3.1
+  cupertino_icons: ^1.0.5
+  firebase_auth: ^4.2.4
+  firebase_core: ^2.4.1
+  firebase_remote_config: ^3.0.9
   flutter:
     sdk: flutter
   flutter_rating_stars: ^1.0.3+4
   flutter_signin_button: ^2.0.0
-  get:
-    git: git@github.com:jonataslaw/getx.git
-  google_sign_in: ^5.1.0
+  get: ^4.6.5
+  google_sign_in: ^5.4.3
   intl: ^0.17.0
 
 dev_dependencies:
-  flutter_lints: ^1.0.0
+  flutter_lints: ^2.0.1
   flutter_test:
     sdk: flutter
 
