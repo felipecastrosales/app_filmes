@@ -22,6 +22,59 @@
           }
         },
         {
+          "client_id": "265149690482-ec8i6aqcude5qsjktla8mmaq6mktasu5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.felipecastrosales.app_filmes",
+            "certificate_hash": "05fbcd6425dc68ce458bbf8c18c9954d3db598f6"
+          }
+        },
+        {
+          "client_id": "265149690482-red5c4kgj8te8sedhmnr51at41isndg3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.felipecastrosales.app_filmes",
+            "certificate_hash": "b168474fa3c1d31ec93022c4219bd77aa9f8300b"
+          }
+        },
+        {
+          "client_id": "265149690482-ddoh5vkv75em34diqqllpuofbui5i2up.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxFcc2YhFFHLsZp3SBhCGpy2SnjfzA0i4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265149690482-ddoh5vkv75em34diqqllpuofbui5i2up.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265149690482:android:ee9d0f8930791499a608eb",
+        "android_client_info": {
+          "package_name": "com.felipecastrosales.app_filmes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265149690482-gb5q5trkpfihaue6h8mejv7o04euj15m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.felipecastrosales.app_filmes",
+            "certificate_hash": "05fbcd6425dc68ce458bbf8c18c9954d3db598f6"
+          }
+        },
+        {
           "client_id": "265149690482-ddoh5vkv75em34diqqllpuofbui5i2up.apps.googleusercontent.com",
           "client_type": 3
         }
